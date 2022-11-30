@@ -1,0 +1,278 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Xenir:LM358 U?
+U 1 1 639381F3
+P 3925 4025
+F 0 "U?" H 3875 4050 70  0000 C CNN
+F 1 "LM358" H 4000 3825 70  0000 C CNN
+F 2 "" H 3875 3975 50  0001 C CNN
+F 3 "" H 3875 3975 50  0001 C CNN
+	1    3925 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Xenir:LM358 U?
+U 3 1 63938969
+P 4125 2450
+F 0 "U?" H 4153 2511 70  0000 L CNN
+F 1 "LM358" H 4153 2390 70  0000 L CNN
+F 2 "" H 4075 2400 50  0001 C CNN
+F 3 "" H 4075 2400 50  0001 C CNN
+	3    4125 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6393A12F
+P 4025 2025
+F 0 "#PWR?" H 4025 1875 50  0001 C CNN
+F 1 "+5V" H 4040 2198 50  0000 C CNN
+F 2 "" H 4025 2025 50  0001 C CNN
+F 3 "" H 4025 2025 50  0001 C CNN
+	1    4025 2025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6393A8AE
+P 4025 2875
+F 0 "#PWR?" H 4025 2625 50  0001 C CNN
+F 1 "GND" H 4030 2702 50  0000 C CNN
+F 2 "" H 4025 2875 50  0001 C CNN
+F 3 "" H 4025 2875 50  0001 C CNN
+	1    4025 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Xenir:Capacitor C?
+U 1 1 6393AD75
+P 3675 2450
+F 0 "C?" V 3646 2565 28  0000 L CNN
+F 1 "100nF" V 3703 2565 28  0000 L CNN
+F 2 "" H 3675 2300 50  0001 C CNN
+F 3 "" H 3675 2300 50  0001 C CNN
+	1    3675 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4025 2150 4025 2075
+Wire Wire Line
+	3675 2300 3675 2075
+Wire Wire Line
+	3675 2075 4025 2075
+Connection ~ 4025 2075
+Wire Wire Line
+	4025 2075 4025 2025
+Wire Wire Line
+	4025 2750 4025 2800
+Wire Wire Line
+	4025 2800 3675 2800
+Wire Wire Line
+	3675 2800 3675 2600
+Connection ~ 4025 2800
+Wire Wire Line
+	4025 2800 4025 2875
+$Comp
+L Xenir:Capacitor C?
+U 1 1 6393EFF1
+P 3950 3475
+F 0 "C?" H 3950 3274 28  0000 C CNN
+F 1 "330nF" H 3950 3331 28  0000 C CNN
+F 2 "" H 3950 3325 50  0001 C CNN
+F 3 "" H 3950 3325 50  0001 C CNN
+	1    3950 3475
+	-1   0    0    1   
+$EndComp
+$Comp
+L Xenir:Resistor R?
+U 1 1 6393FD2E
+P 3950 3675
+F 0 "R?" H 3875 3600 28  0000 C CNN
+F 1 "100k" H 3975 3600 28  0000 C CNN
+F 2 "" H 3950 3575 50  0001 C CNN
+F 3 "" H 3950 3575 50  0001 C CNN
+	1    3950 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Xenir:Resistor R?
+U 1 1 63940C93
+P 3225 3925
+F 0 "R?" H 3150 3850 28  0000 C CNN
+F 1 "1k" H 3250 3850 28  0000 C CNN
+F 2 "" H 3225 3825 50  0001 C CNN
+F 3 "" H 3225 3825 50  0001 C CNN
+	1    3225 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Xenir:Cap_Polarized C?
+U 1 1 63941422
+P 2575 3825
+F 0 "C?" H 2575 3929 28  0000 C CNN
+F 1 "10uF" H 2575 3872 28  0000 C CNN
+F 2 "" H 2575 3875 50  0001 C CNN
+F 3 "" H 2575 3875 50  0001 C CNN
+	1    2575 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Xenir:Resistor R?
+U 1 1 63942506
+P 3050 2300
+F 0 "R?" H 2975 2225 28  0000 C CNN
+F 1 "1k" H 3075 2225 28  0000 C CNN
+F 2 "" H 3050 2200 50  0001 C CNN
+F 3 "" H 3050 2200 50  0001 C CNN
+	1    3050 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Xenir:Resistor R?
+U 1 1 63942F3E
+P 3050 2775
+F 0 "R?" H 2975 2700 28  0000 C CNN
+F 1 "1k" H 3075 2700 28  0000 C CNN
+F 2 "" H 3050 2675 50  0001 C CNN
+F 3 "" H 3050 2675 50  0001 C CNN
+	1    3050 2775
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 639438F8
+P 3050 2975
+F 0 "#PWR?" H 3050 2725 50  0001 C CNN
+F 1 "GND" H 3055 2802 50  0000 C CNN
+F 2 "" H 3050 2975 50  0001 C CNN
+F 3 "" H 3050 2975 50  0001 C CNN
+	1    3050 2975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2500 3050 2550
+Wire Wire Line
+	3050 2100 3050 2075
+Wire Wire Line
+	3050 2075 3675 2075
+Connection ~ 3675 2075
+$Comp
+L power:+2V5 #PWR?
+U 1 1 639442AA
+P 2750 2525
+F 0 "#PWR?" H 2750 2375 50  0001 C CNN
+F 1 "+2V5" H 2765 2698 50  0000 C CNN
+F 2 "" H 2750 2525 50  0001 C CNN
+F 3 "" H 2750 2525 50  0001 C CNN
+	1    2750 2525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2550 2750 2550
+Wire Wire Line
+	2750 2550 2750 2525
+Connection ~ 3050 2550
+Wire Wire Line
+	3050 2550 3050 2575
+$Comp
+L power:+2V5 #PWR?
+U 1 1 63944CFD
+P 3625 4125
+F 0 "#PWR?" H 3625 3975 50  0001 C CNN
+F 1 "+2V5" H 3575 4075 50  0000 C CNN
+F 2 "" H 3625 4125 50  0001 C CNN
+F 3 "" H 3625 4125 50  0001 C CNN
+	1    3625 4125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3475 4225 3475
+Wire Wire Line
+	4225 3475 4225 3675
+Wire Wire Line
+	3800 3475 3575 3475
+Wire Wire Line
+	3575 3475 3575 3675
+Wire Wire Line
+	3575 3925 3425 3925
+Wire Wire Line
+	3625 3925 3575 3925
+Connection ~ 3575 3925
+Wire Wire Line
+	3750 3675 3575 3675
+Connection ~ 3575 3675
+Wire Wire Line
+	3575 3675 3575 3925
+Wire Wire Line
+	4150 3675 4225 3675
+Connection ~ 4225 3675
+Wire Wire Line
+	4225 3675 4225 4025
+$Comp
+L Xenir:Electret M?
+U 1 1 6394900A
+P 1925 4025
+F 0 "M?" H 1959 4370 50  0000 C CNN
+F 1 "Electret" H 1959 4279 50  0000 C CNN
+F 2 "" H 1925 4375 50  0001 C CNN
+F 3 "" H 1925 4375 50  0001 C CNN
+	1    1925 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 639495DE
+P 2175 4125
+F 0 "#PWR?" H 2175 3875 50  0001 C CNN
+F 1 "GND" H 2180 3952 50  0000 C CNN
+F 2 "" H 2175 4125 50  0001 C CNN
+F 3 "" H 2175 4125 50  0001 C CNN
+	1    2175 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Xenir:Resistor R?
+U 1 1 639499BB
+P 2175 3550
+F 0 "R?" H 2100 3475 28  0000 C CNN
+F 1 "5.1k" H 2200 3475 28  0000 C CNN
+F 2 "" H 2175 3450 50  0001 C CNN
+F 3 "" H 2175 3450 50  0001 C CNN
+	1    2175 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6394AB2D
+P 2175 3250
+F 0 "#PWR?" H 2175 3100 50  0001 C CNN
+F 1 "+5V" H 2190 3423 50  0000 C CNN
+F 2 "" H 2175 3250 50  0001 C CNN
+F 3 "" H 2175 3250 50  0001 C CNN
+	1    2175 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2175 3250 2175 3350
+Wire Wire Line
+	2175 3750 2175 3925
+Wire Wire Line
+	2175 3925 2425 3925
+Connection ~ 2175 3925
+Wire Wire Line
+	2725 3925 3025 3925
+$EndSCHEMATC
