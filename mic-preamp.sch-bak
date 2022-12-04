@@ -255,27 +255,27 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x07_Female J1
 U 1 1 63973E4A
-P 5700 3775
-F 0 "J1" H 5728 3801 50  0000 L CNN
-F 1 "Conn_01x07_Female" H 5728 3710 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 5700 3775 50  0001 C CNN
-F 3 "~" H 5700 3775 50  0001 C CNN
-	1    5700 3775
+P 6550 3475
+F 0 "J1" H 6578 3501 50  0000 L CNN
+F 1 "Conn_01x07_Female" H 6578 3410 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 6550 3475 50  0001 C CNN
+F 3 "~" H 6550 3475 50  0001 C CNN
+	1    6550 3475
 	1    0    0    -1  
 $EndComp
-Text GLabel 5500 4075 0    50   Input ~ 0
+Text GLabel 6350 3775 0    50   Input ~ 0
 MICGND
-Text GLabel 5500 3975 0    50   Input ~ 0
+Text GLabel 6350 3675 0    50   Input ~ 0
 PTTGND
-Text GLabel 5500 3875 0    50   Input ~ 0
+Text GLabel 6350 3575 0    50   Input ~ 0
 PTT
-Text GLabel 5500 3475 0    50   Input ~ 0
+Text GLabel 6350 3175 0    50   Input ~ 0
 MICIN
-Text GLabel 5500 3675 0    50   Input ~ 0
+Text GLabel 6350 3375 0    50   Input ~ 0
 FREQUPDN
-Text GLabel 5500 4550 0    50   Input ~ 0
+Text GLabel 6350 4250 0    50   Input ~ 0
 PTT
-Text GLabel 5500 4750 0    50   Input ~ 0
+Text GLabel 6350 4450 0    50   Input ~ 0
 MICOUT
 Text GLabel 2025 4125 0    50   Input ~ 0
 MICGND
@@ -285,41 +285,39 @@ Wire Wire Line
 	2175 4125 2175 4475
 Text GLabel 4025 2800 2    50   Input ~ 0
 PTTGND
-Text GLabel 4325 4025 2    50   Input ~ 0
+Text GLabel 4850 4025 2    50   Input ~ 0
 MICOUT
-Wire Wire Line
-	4325 4025 4225 4025
 $Comp
 L power:GND #PWR0108
 U 1 1 63989072
-P 4900 4650
-F 0 "#PWR0108" H 4900 4400 50  0001 C CNN
-F 1 "GND" H 4905 4477 50  0000 C CNN
-F 2 "" H 4900 4650 50  0001 C CNN
-F 3 "" H 4900 4650 50  0001 C CNN
-	1    4900 4650
+P 5750 4350
+F 0 "#PWR0108" H 5750 4100 50  0001 C CNN
+F 1 "GND" H 5755 4177 50  0000 C CNN
+F 2 "" H 5750 4350 50  0001 C CNN
+F 3 "" H 5750 4350 50  0001 C CNN
+	1    5750 4350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x04_Female J2
 U 1 1 6398BACA
-P 5700 4550
-F 0 "J2" H 5728 4526 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 5728 4435 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5700 4550 50  0001 C CNN
-F 3 "~" H 5700 4550 50  0001 C CNN
-	1    5700 4550
+P 6550 4250
+F 0 "J2" H 6578 4226 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 6578 4135 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6550 4250 50  0001 C CNN
+F 3 "~" H 6550 4250 50  0001 C CNN
+	1    6550 4250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0109
 U 1 1 63993EEF
-P 5500 4450
-F 0 "#PWR0109" H 5500 4300 50  0001 C CNN
-F 1 "+5V" H 5515 4623 50  0000 C CNN
-F 2 "" H 5500 4450 50  0001 C CNN
-F 3 "" H 5500 4450 50  0001 C CNN
-	1    5500 4450
+P 6350 4150
+F 0 "#PWR0109" H 6350 4000 50  0001 C CNN
+F 1 "+5V" H 6365 4323 50  0000 C CNN
+F 2 "" H 6350 4150 50  0001 C CNN
+F 3 "" H 6350 4150 50  0001 C CNN
+	1    6350 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -328,7 +326,7 @@ Connection ~ 2175 3925
 Wire Wire Line
 	2175 4125 2025 4125
 Wire Wire Line
-	5500 4650 4900 4650
+	6350 4350 5750 4350
 $Comp
 L Xenir:LM358 U1
 U 2 1 6387C712
@@ -340,5 +338,20 @@ F 3 "" H 3875 3975 50  0001 C CNN
 	2    3925 4025
 	1    0    0    -1  
 $EndComp
+$Comp
+L Xenir:Capacitor C4
+U 1 1 638A53E8
+P 4475 4025
+F 0 "C4" H 4475 3824 28  0000 C CNN
+F 1 "100nF" H 4475 3881 28  0000 C CNN
+F 2 "Xenir:Capacitor 1206" H 4475 3875 50  0001 C CNN
+F 3 "" H 4475 3875 50  0001 C CNN
+	1    4475 4025
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4225 4025 4325 4025
 Connection ~ 4225 4025
+Wire Wire Line
+	4625 4025 4850 4025
 $EndSCHEMATC
